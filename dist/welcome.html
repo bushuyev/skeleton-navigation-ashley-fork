@@ -8,11 +8,11 @@
     <form role="form" submit.delegate="welcome()">
       <div class="form-group" >
         <label for="signalRIsConnected">signalRIsConnected</label>
-        <input type="checkbox" checked.bind="signalRIsConnected" class="form-control" id="signalRIsConnected" >
+        <input type="checkbox" checked.bind="signalRIsConnected" class="form-control" id="signalRIsConnected" >${signalRIsConnected}
       </div>
         <div class="form-group" >
           <label for="loggingIsEnabled">loggingIsEnabled</label>
-          <input type="checkbox" checked.bind="loggingIsEnabled" class="form-control" id="loggingIsEnabled" >
+          <input type="checkbox" checked.bind="loggingIsEnabled" class="form-control" id="loggingIsEnabled" >${loggingIsEnabled}
         </div>
       <div class="form-group" style.bind="borderColor">
         <label for="fn">First Name</label>
