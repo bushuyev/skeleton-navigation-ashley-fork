@@ -4,8 +4,6 @@ export class Welcome{
     this.firstName = 'John';
     this.lastName = 'Doe';
     this.borderColor = 'red';
-    this.signalRIsConnected = false;
-    this.loggingIsEnabled = false;
   }
 
   get borderColorStyle() {

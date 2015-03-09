@@ -1,15 +1,7 @@
 <template>
   <section>
     <h2>${heading}</h2>
-    <div class="${signalRIsConnected ? 'bg-success' : 'bg-danger'} pull-right connection-status-padding" show.bind="loggingIsEnabled">
-      <span class="connection-status-label">Connection</span>
-    </div>
-
     <form role="form" submit.delegate="welcome()">
-      <div class="form-group" >
-        <label for="signalRIsConnected">signalRIsConnected</label>
-        <input type="checkbox" checked.bind="signalRIsConnected" class="form-control" id="signalRIsConnected" >${signalRIsConnected}
-      </div>
         <div class="form-group" >
           <label for="loggingIsEnabled">loggingIsEnabled</label>
           <input type="checkbox" checked.bind="loggingIsEnabled" class="form-control" id="loggingIsEnabled" >${loggingIsEnabled}
