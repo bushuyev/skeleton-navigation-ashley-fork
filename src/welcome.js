@@ -1,3 +1,5 @@
+import {declarePropertyDependencies} from 'aurelia-framework';
+
 export class Welcome{
   constructor(){
     this.heading = 'Welcome to the Aurelia Navigation App!';
@@ -19,3 +21,5 @@ export class UpperValueConverter {
     return value && value.toUpperCase();
   }
 }
+
+declarePropertyDependencies(Welcome, 'fullName', ['firstName', 'lastName']);
